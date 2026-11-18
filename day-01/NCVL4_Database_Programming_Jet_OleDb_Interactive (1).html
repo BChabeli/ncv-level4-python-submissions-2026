@@ -1,0 +1,235 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NC(V) L4 | Database Programming Lab</title><style>
+:root{--blue:#005596;--dark:#192b43;--gold:#fdb515;--green:#16763a;--red:#ba2440;--bg:#f4f7fb;--line:#d6e0ea}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:17px/1.5 'Segoe UI',Arial,sans-serif;color:#233143}header{background:var(--dark);color:white;padding:15px 22px;position:sticky;top:0;z-index:5}header strong{color:var(--gold)}nav{display:flex;gap:7px;overflow:auto;margin-top:10px}nav button{white-space:nowrap;background:#314966;color:white;border:1px solid #58718d;border-radius:25px;padding:6px 12px;cursor:pointer}nav button.active{background:var(--gold);color:#192b43;font-weight:bold}main{max-width:1100px;margin:auto;padding:22px 16px 100px}.page{display:none}.page.active{display:block}h1{color:var(--blue);font-size:2rem;margin:0 0 8px}h2{font-size:1.25rem;color:var(--blue);margin:0 0 10px}.sub{color:#526277}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}@media(max-width:760px){.grid{grid-template-columns:1fr}header{position:static}}.card{background:white;border:1px solid var(--line);border-radius:13px;padding:20px;margin:0 0 16px}.task{border:2px solid var(--green)}.analogy{background:#fff5d8;border-left:5px solid var(--gold);padding:13px;border-radius:8px;margin:12px 0}.key{background:#eaf3fb;border-left:5px solid var(--blue);padding:12px;border-radius:8px}.warning{background:#fff0f1;border-left:5px solid var(--red);padding:12px;border-radius:8px}.btn{background:var(--blue);border:0;color:white;border-radius:7px;padding:9px 14px;cursor:pointer;margin:4px 5px 4px 0;font:inherit}.btn.green{background:var(--green)}.btn.alt{background:white;color:var(--blue);border:1px solid var(--blue)}pre{background:#152439;color:#e7f0ff;padding:16px;border-radius:9px;overflow:auto;font:14px/1.55 Consolas,monospace;white-space:pre}code{background:#eaf3fb;border-radius:4px;padding:1px 4px}input,select,textarea{font:inherit;border:1px solid #aab9c9;border-radius:6px;padding:8px;max-width:100%}textarea{width:100%;min-height:90px}.feedback{font-weight:600;margin:10px 0;min-height:20px}.good{color:var(--green)}.bad{color:var(--red)}table{border-collapse:collapse;width:100%;background:white}th,td{padding:9px;border:1px solid #ccd7e3;text-align:left}th{background:#e8f1fa}.diagram{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.diagram div{padding:15px;border:2px solid var(--blue);border-radius:10px;background:#edf5fc}.diagram span{font-size:24px;color:var(--green)}.hidden{display:none}.quizitem{padding:13px;border-bottom:1px solid var(--line)}.quizitem label{display:block;padding:4px}.bar{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:22px}.small{font-size:14px;color:#57687a}#progress{height:5px;background:#465b75}#progress div{height:100%;background:var(--gold);width:12.5%;transition:width .2s} .status{padding:9px;border-radius:8px;background:#eaf3fb}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold)}
+</style></head><body><header><div>🎓 <strong>NC(V) Level 4 Computer Programming</strong> · Interactive Database Lab</div><nav id="nav"></nav></header><div id="progress"><div id="fill"></div></div><main>
+<section class="page active" data-title="Start"><h1>🗃️ The Student Records Desk</h1><p class="sub">Learn to connect a Microsoft Access database to VB.NET using <b>OleDb and Microsoft.Jet.OLEDB.4.0</b>.</p><div class="grid"><div class="card"><h2>Our story</h2><p>The college needs a small Windows Forms program to save student details, find a student, change a course, and delete an old record.</p><div class="analogy"><b>Think of a database as a filing cabinet.</b> Access holds the files. VB.NET is the front desk. OleDb is the messenger that takes requests between them.</div><p>Work through each lesson, try the activities, and download code to use in Visual Studio.</p></div><div class="card task"><h2>Warm-up</h2><p>Which software stores our student records?</p><select id="warm"><option value="">Choose...</option><option value="vb">Visual Studio</option><option value="access">Microsoft Access</option><option value="jet">Button control</option></select><button class="btn" onclick="check('warm','access','warmFb','Correct! Access stores the data. VB.NET works with it.')">Check</button><div class="feedback" id="warmFb"></div></div></div><div class="card"><h2>Learning goals</h2><p>Database and table → connection string → SELECT and DataGridView → INSERT → UPDATE and DELETE → BindingSource → debugging → final quiz.</p><div class="warning"><b>Important setup:</b> Jet 4.0 is for the older <code>.mdb</code> Access format, not <code>.accdb</code>. In Visual Studio, target <b>x86 (32-bit)</b> for Jet. Jet is not available as a 64-bit provider. If you have an <code>.accdb</code> file, use the ACE provider instead; the connection string is different.</div></div></section>
+<section class="page" data-title="Build database"><h1>1. Create the Access database</h1><div class="grid"><div class="card"><h2>Make StudentDB.mdb</h2><ol><li>Open Microsoft Access and create a database in <b>Access 2002–2003 (.mdb)</b> format (or convert/save a copy to that format).</li><li>Name it <code>StudentDB.mdb</code>.</li><li>Create a table named <code>Students</code>.</li><li>Use the field names and types below exactly.</li><li>Set <code>StudentID</code> as the primary key.</li></ol><table><tr><th>Field</th><th>Access type</th></tr><tr><td>StudentID</td><td>AutoNumber (Primary Key)</td></tr><tr><td>FullName</td><td>Short Text</td></tr><tr><td>Course</td><td>Short Text</td></tr><tr><td>Mark</td><td>Number (Integer)</td></tr></table></div><div class="card task"><h2>Choose the right field</h2><p>Which field should increase automatically when we add a new student?</p><select id="field"><option value="">Choose...</option><option>FullName</option><option>Course</option><option>StudentID</option><option>Mark</option></select><button class="btn" onclick="check('field','StudentID','fieldFb','Yes! AutoNumber gives each student a unique ID.')">Check</button><div class="feedback" id="fieldFb"></div><div class="key">A <b>primary key</b> identifies one record. A <b>record</b> is one row. A <b>field</b> is one column.</div></div></div><div class="card"><h2>Our sample records</h2><table id="sample"></table><p class="small">These records are used in the interactive simulation. Your real Access file is separate.</p></div></section>
+<section class="page" data-title="Connect"><h1>2. Connect VB.NET to Access</h1><div class="card"><div class="diagram"><div><b>Windows Form</b><br>Buttons / TextBoxes</div><span>⇄</span><div><b>OleDb</b><br>Jet provider</div><span>⇄</span><div><b>StudentDB.mdb</b><br>Students table</div></div><div class="analogy"><b>Connection string = address and key.</b> It tells the program which provider to use and where the database file lives.</div><pre>Imports System.Data.OleDb
+
+Private ReadOnly conString As String =
+    "Provider=Microsoft.Jet.OLEDB.4.0;" &amp;
+    "Data Source=C:\CollegeDB\StudentDB.mdb;"</pre><p>Create the folder <code>C:\CollegeDB</code>, put the <code>.mdb</code> file there, and adjust the path if your file is elsewhere. Set the project platform target to <b>x86</b>.</p><div class="warning">Do not use <code>Microsoft.Jet.OLEDB.4.0</code> for an <code>.accdb</code> file. If you see <b>“provider is not registered”</b>, check the x86 setting and that Jet is available on your Windows PC.</div></div><div class="grid"><div class="card task"><h2>Connection-string puzzle</h2><p>Choose the correct provider for <code>StudentDB.mdb</code> in this lesson.</p><select id="provider"><option value="">Choose...</option><option value="jet">Microsoft.Jet.OLEDB.4.0</option><option value="sql">SQL Server</option><option value="ace">Microsoft.ACE.OLEDB.12.0</option></select><button class="btn" onclick="check('provider','jet','providerFb','Correct! Jet 4.0 connects to the .mdb file in this lesson.')">Check</button><div id="providerFb" class="feedback"></div></div><div class="card"><h2>Simple connection test</h2><pre>Try
+    Using con As New OleDbConnection(conString)
+        con.Open()
+        MessageBox.Show("Connected successfully!")
+    End Using
+Catch ex As Exception
+    MessageBox.Show(ex.Message)
+End Try</pre><p><code>Using</code> closes and disposes the connection when finished, including when an error occurs.</p></div></div></section>
+<section class="page" data-title="SELECT"><h1>3. Display and search records</h1><div class="grid"><div class="card"><h2>Display all records in a DataGridView</h2><pre>Private Sub LoadStudents()
+    Using con As New OleDbConnection(conString)
+        Dim sql As String =
+            "SELECT StudentID, FullName, Course, [Mark] " &amp;
+            "FROM Students ORDER BY StudentID"
+        Using da As New OleDbDataAdapter(sql, con)
+            Dim dt As New DataTable()
+            da.Fill(dt)
+            DataGridView1.DataSource = dt
+        End Using
+    End Using
+End Sub</pre><p><b>SELECT</b> reads records. <code>DataTable</code> holds the results in memory. <code>DataGridView</code> shows the rows.</p></div><div class="card task"><h2>Live SQL simulator</h2><p>Choose a course to filter the sample students.</p><select id="course"><option value="all">All courses</option><option value="Programming">Programming</option><option value="Networking">Networking</option></select><button class="btn" onclick="filterStudents()">▶ Run SELECT</button><div id="sqlOutput" class="status"></div><div id="results"></div><p class="small">This is a browser simulation, not a real Access connection.</p></div></div><div class="card"><h2>Search safely using a parameter</h2><pre>Dim sql As String =
+    "SELECT * FROM Students WHERE StudentID = ?"
+Using con As New OleDbConnection(conString)
+    Using cmd As New OleDbCommand(sql, con)
+        cmd.Parameters.Add("@id", OleDbType.Integer).Value =
+            Integer.Parse(txtID.Text)
+        Using da As New OleDbDataAdapter(cmd)
+            Dim dt As New DataTable()
+            da.Fill(dt)
+            DataGridView1.DataSource = dt
+        End Using
+    End Using
+End Using</pre><div class="key">In Jet OleDb SQL, <code>?</code> is a placeholder. <b>Parameter order matters.</b> The first parameter matches the first <code>?</code>.</div></div></section>
+<section class="page" data-title="INSERT"><h1>4. Save a new student (INSERT)</h1><div class="grid"><div class="card"><h2>Save button code</h2><pre>Private Sub btnSave_Click(sender As Object,
+    e As EventArgs) Handles btnSave.Click
+    Dim score As Integer
+    If txtName.Text.Trim() = "" OrElse
+       txtCourse.Text.Trim() = "" OrElse
+       Not Integer.TryParse(txtMark.Text, score) OrElse
+       score &lt; 0 OrElse score &gt; 100 Then
+        MessageBox.Show("Enter valid student details.")
+        Return
+    End If
+
+    Dim sql = "INSERT INTO Students " &amp;
+        "(FullName, Course, [Mark]) VALUES (?, ?, ?)"
+    Try
+        Using con As New OleDbConnection(conString)
+            Using cmd As New OleDbCommand(sql, con)
+                cmd.Parameters.Add("@name", OleDbType.VarWChar).Value = txtName.Text.Trim()
+                cmd.Parameters.Add("@course", OleDbType.VarWChar).Value = txtCourse.Text.Trim()
+                cmd.Parameters.Add("@mark", OleDbType.Integer).Value = score
+                con.Open()
+                cmd.ExecuteNonQuery()
+            End Using
+        End Using
+        LoadStudents()
+        MessageBox.Show("Student saved!")
+    Catch ex As Exception
+        MessageBox.Show(ex.Message)
+    End Try
+End Sub</pre><p><b>ExecuteNonQuery()</b> runs INSERT, UPDATE, or DELETE. It returns the number of rows affected.</p></div><div class="card task"><h2>Try saving a record</h2><label>Full name<br><input id="newName" placeholder="e.g. Thabo Molefe"></label><p><label>Course<br><select id="newCourse"><option>Programming</option><option>Networking</option></select></label></p><label>Mark (0–100)<br><input type="number" min="0" max="100" id="newMark" placeholder="e.g. 75"></label><p><button class="btn green" onclick="insertStudent()">Save record</button></p><div id="insertFb" class="feedback"></div><div id="insertTable"></div><div class="analogy">We leave out <code>StudentID</code> from INSERT because Access creates the AutoNumber value.</div></div></div></section>
+<section class="page" data-title="UPDATE / DELETE"><h1>5. Change and delete records</h1><div class="grid"><div class="card"><h2>UPDATE changes an existing row</h2><pre>Dim sql = "UPDATE Students SET Course = ?, " &amp;
+          "[Mark] = ? WHERE StudentID = ?"
+Using con As New OleDbConnection(conString)
+    Using cmd As New OleDbCommand(sql, con)
+        cmd.Parameters.Add("@course", OleDbType.VarWChar).Value = txtCourse.Text
+        cmd.Parameters.Add("@mark", OleDbType.Integer).Value = score
+        cmd.Parameters.Add("@id", OleDbType.Integer).Value = studentID
+        con.Open()
+        Dim changed As Integer = cmd.ExecuteNonQuery()
+    End Using
+End Using</pre><h2>DELETE removes a row</h2><pre>Dim sql = "DELETE FROM Students WHERE StudentID = ?"
+Using con As New OleDbConnection(conString)
+    Using cmd As New OleDbCommand(sql, con)
+        cmd.Parameters.Add("@id", OleDbType.Integer).Value = studentID
+        con.Open()
+        Dim deleted As Integer = cmd.ExecuteNonQuery()
+    End Using
+End Using</pre><div class="warning"><b>Never forget WHERE!</b> Without it, an UPDATE can change every record and DELETE can remove every record. Confirm before deleting.</div></div><div class="card task"><h2>Practice CRUD on sample records</h2><div id="crudTable"></div><p>Student ID: <select id="crudId"></select></p><p>New mark: <input type="number" id="crudMark" min="0" max="100" placeholder="0–100"></p><button class="btn" onclick="updateStudent()">Update mark</button><button class="btn alt" onclick="deleteStudent()">Delete selected record</button><button class="btn alt" onclick="resetData()">Reset sample data</button><div class="feedback" id="crudFb"></div><p class="small">This changes only the practice data inside this page, not your Access file.</p></div></div></section>
+<section class="page" data-title="BindingSource"><h1>6. BindingSource and navigation</h1><div class="grid"><div class="card"><h2>Why use a BindingSource?</h2><p>A <code>DataGridView</code> displays many rows. A <code>BindingSource</code> helps us manage the current record and move from one record to another. We can show the current student's details in TextBoxes or Labels.</p><div class="analogy">Think of a <b>BindingSource</b> as a bookmark in a class register. You can go to the next student or the previous one without searching the whole register yourself.</div><pre>Private bs As New BindingSource()
+
+Private Sub LoadStudents()
+    Using con As New OleDbConnection(conString)
+        Dim da As New OleDbDataAdapter(
+            "SELECT * FROM Students ORDER BY StudentID", con)
+        Dim dt As New DataTable()
+        da.Fill(dt)
+        bs.DataSource = dt
+        DataGridView1.DataSource = bs
+        txtName.DataBindings.Clear()
+        txtName.DataBindings.Add("Text", bs, "FullName")
+    End Using
+End Sub
+
+Private Sub btnNext_Click(sender As Object,
+    e As EventArgs) Handles btnNext.Click
+    bs.MoveNext()
+End Sub
+
+Private Sub btnPrevious_Click(sender As Object,
+    e As EventArgs) Handles btnPrevious.Click
+    bs.MovePrevious()
+End Sub</pre><div class="key">BindingSource moves through records in memory. <b>It does not automatically save edits to Access.</b> You still need the correct database update code.</div></div><div class="card task"><h2>Navigate through records</h2><div class="status" id="currentStudent"></div><button class="btn alt" onclick="move(-1)">◀ Previous</button><button class="btn" onclick="move(1)">Next ▶</button><p id="position" class="small"></p><p>What does <code>bs.MoveNext()</code> do?</p><select id="bindQ"><option value="">Choose...</option><option value="save">Saves a new record in Access</option><option value="next">Moves to the next current record</option><option value="delete">Deletes the current record</option></select><button class="btn" onclick="check('bindQ','next','bindFb','Correct! MoveNext changes the current record, not the database.')">Check</button><div id="bindFb" class="feedback"></div></div></div></section>
+<section class="page" data-title="Debug & build"><h1>7. Fix errors and build the form</h1><div class="grid"><div class="card task"><h2>Find the error</h2><p>A learner sees: <b>“The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.”</b> What should they check first?</p><select id="debug"><option value="">Choose...</option><option value="x86">Project target is x86 (32-bit)</option><option value="rename">Rename the table to Students2</option><option value="sql">Remove WHERE from SQL</option></select><button class="btn" onclick="check('debug','x86','debugFb','Correct. Jet 4.0 is a 32-bit provider. Also check the Windows/provider setup.')">Check</button><div id="debugFb" class="feedback"></div><h2>Spot the dangerous SQL</h2><p>Which statement changes <b>every</b> student's mark?</p><select id="whereQ"><option value="">Choose...</option><option value="one">UPDATE Students SET [Mark] = 80 WHERE StudentID = 1</option><option value="all">UPDATE Students SET [Mark] = 80</option></select><button class="btn" onclick="check('whereQ','all','whereFb','Correct. Without WHERE, all rows are affected.')">Check</button><div id="whereFb" class="feedback"></div></div><div class="card"><h2>Visual Studio practical</h2><ol><li>Create a <b>VB.NET Windows Forms App</b>.</li><li>Add a DataGridView named <code>DataGridView1</code>.</li><li>Add TextBoxes <code>txtID</code>, <code>txtName</code>, <code>txtCourse</code>, <code>txtMark</code>.</li><li>Add buttons named <code>btnLoad</code>, <code>btnSave</code>, <code>btnUpdate</code>, <code>btnDelete</code>.</li><li>Set the build platform to <b>x86</b>.</li><li>Make sure <code>StudentDB.mdb</code> exists at the connection-string path.</li><li>Download the code below and use it as your Form1 code-behind.</li></ol><button class="btn green" onclick="downloadCode(false)">⬇ Download starter Form1.vb</button><button class="btn alt" onclick="toggleSolution()">Show working example</button><div id="solutionBox" class="hidden"><pre id="solutionCode"></pre><button class="btn green" onclick="downloadCode(true)">⬇ Download completed Form1.vb</button></div><p class="small">The code assumes these controls already exist on the form. The completed example includes load, save, update and delete with input checks and error messages.</p></div></div><div class="card"><h2>Common error guide</h2><table><tr><th>Error</th><th>Check</th></tr><tr><td>Provider is not registered</td><td>Jet 4.0 needs 32-bit process; set x86.</td></tr><tr><td>Could not find file</td><td>Check database path and filename.</td></tr><tr><td>Could not find installable ISAM</td><td>Check connection-string spelling and format.</td></tr><tr><td>No value given for one or more required parameters</td><td>Check field names, table names and parameter order.</td></tr><tr><td>Data type mismatch</td><td>Check integer/text field types and parameter values.</td></tr><tr><td>Database locked</td><td>Close other processes and check file permissions.</td></tr></table></div></section>
+<section class="page" data-title="Exit quiz"><h1>8. Exit ticket</h1><p>Answer the questions and mark your work. You can try again after revising.</p><div class="card task" id="quiz"></div><div class="card"><h2>Reflect</h2><p>Explain the difference between <code>ExecuteNonQuery()</code> and <code>OleDbDataAdapter.Fill()</code>.</p><textarea id="reflection" placeholder="ExecuteNonQuery is used when... Fill is used when..."></textarea><button class="btn" onclick="saveReflection()">Save reflection on this browser</button><div id="reflectionFb" class="feedback"></div><p class="small">Your teacher can ask you to screenshot your quiz score and show your working Visual Studio project as PoE evidence.</p></div></section>
+<div class="bar"><button class="btn alt" onclick="go(Math.max(0,current-1))">◀ Previous lesson</button><span id="lessonCount"></span><button class="btn" onclick="go(Math.min(pages.length-1,current+1))">Next lesson ▶</button></div></main><script>
+const pages=[...document.querySelectorAll('.page')],nav=document.getElementById('nav');let current=0;pages.forEach((p,i)=>{let b=document.createElement('button');b.textContent=(i+1)+'. '+p.dataset.title;b.onclick=()=>go(i);nav.appendChild(b)});function go(i){current=i;pages.forEach((p,j)=>p.classList.toggle('active',j===i));[...nav.children].forEach((b,j)=>b.classList.toggle('active',j===i));document.getElementById('fill').style.width=((i+1)/pages.length*100)+'%';document.getElementById('lessonCount').textContent=`Lesson ${i+1} of ${pages.length}`;window.scrollTo(0,0)}go(0);
+function feedback(id,ok,msg){let e=document.getElementById(id);e.className='feedback '+(ok?'good':'bad');e.textContent=msg}function check(id,correct,fb,yes){let val=document.getElementById(id).value;feedback(fb,val===correct,val===correct?yes:'Not quite. Read the explanation and try again.')}
+const initial=[{id:1,name:'Lerato Mokoena',course:'Programming',mark:78},{id:2,name:'Thabo Molefe',course:'Networking',mark:65},{id:3,name:'Naledi Dlamini',course:'Programming',mark:91}];let students=initial.map(x=>({...x})),nextId=4,pos=0;function makeTable(rows){return '<table><tr><th>StudentID</th><th>FullName</th><th>Course</th><th>Mark</th></tr>'+rows.map(s=>`<tr><td>${s.id}</td><td>${esc(s.name)}</td><td>${esc(s.course)}</td><td>${s.mark}</td></tr>`).join('')+'</table>'}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function refresh(){document.getElementById('sample').innerHTML=makeTable(initial);document.getElementById('insertTable').innerHTML=makeTable(students);document.getElementById('crudTable').innerHTML=makeTable(students);let select=document.getElementById('crudId');let chosen=select.value;select.innerHTML=students.map(s=>`<option value="${s.id}">${s.id} - ${esc(s.name)}</option>`).join('');if(students.some(s=>String(s.id)===chosen))select.value=chosen;pos=Math.max(0,Math.min(pos,students.length-1));renderCurrent()}function filterStudents(){let c=document.getElementById('course').value;let rows=students.filter(s=>c==='all'||s.course===c);document.getElementById('sqlOutput').textContent=c==='all'?'SELECT * FROM Students':'SELECT * FROM Students WHERE Course = ?   [parameter: '+c+']';document.getElementById('results').innerHTML=makeTable(rows)}function insertStudent(){let name=document.getElementById('newName').value.trim(),course=document.getElementById('newCourse').value,mark=Number(document.getElementById('newMark').value);if(!name||!document.getElementById('newMark').value||!Number.isInteger(mark)||mark<0||mark>100){feedback('insertFb',false,'Enter a name and a whole-number mark between 0 and 100.');return}students.push({id:nextId++,name,course,mark});feedback('insertFb',true,'INSERT successful in the practice data. New AutoNumber assigned.');refresh()}function updateStudent(){let id=Number(document.getElementById('crudId').value),field=document.getElementById('crudMark'),mark=Number(field.value);if(!field.value||!Number.isInteger(mark)||mark<0||mark>100){feedback('crudFb',false,'Enter a whole-number mark from 0 to 100.');return}let s=students.find(x=>x.id===id);if(!s){feedback('crudFb',false,'No student selected.');return}s.mark=mark;feedback('crudFb',true,'UPDATE changed 1 row in practice data.');refresh()}function deleteStudent(){let id=Number(document.getElementById('crudId').value);if(!students.some(s=>s.id===id)){feedback('crudFb',false,'No student selected.');return}if(!confirm('Delete this student from the practice data?'))return;students=students.filter(s=>s.id!==id);feedback('crudFb',true,'DELETE removed 1 row from practice data.');refresh()}function resetData(){students=initial.map(x=>({...x}));nextId=4;pos=0;feedback('crudFb',true,'Practice data restored.');refresh()}function renderCurrent(){let e=document.getElementById('currentStudent');e.textContent=students.length?`StudentID: ${students[pos].id} | ${students[pos].name} | ${students[pos].course} | Mark: ${students[pos].mark}`:'No records';document.getElementById('position').textContent=students.length?`Record ${pos+1} of ${students.length}`:'Record 0 of 0'}function move(n){pos=Math.max(0,Math.min(students.length-1,pos+n));renderCurrent()}refresh();filterStudents();
+const solution=`Imports System.Data.OleDb
+
+Public Class Form1
+    Private ReadOnly conString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\CollegeDB\\StudentDB.mdb;"
+
+    Private Sub LoadStudents()
+        Try
+            Using con As New OleDbConnection(conString)
+                Using da As New OleDbDataAdapter("SELECT StudentID, FullName, Course, [Mark] FROM Students ORDER BY StudentID", con)
+                    Dim dt As New DataTable()
+                    da.Fill(dt)
+                    DataGridView1.DataSource = dt
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnLoad_Click(sender As Object, e As EventArgs) Handles btnLoad.Click
+        LoadStudents()
+    End Sub
+
+    Private Function ReadMark(ByRef score As Integer) As Boolean
+        Return Integer.TryParse(txtMark.Text, score) AndAlso score >= 0 AndAlso score <= 100
+    End Function
+
+    Private Function ReadID(ByRef id As Integer) As Boolean
+        Return Integer.TryParse(txtID.Text, id) AndAlso id > 0
+    End Function
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        Dim score As Integer
+        If txtName.Text.Trim() = "" OrElse txtCourse.Text.Trim() = "" OrElse Not ReadMark(score) Then
+            MessageBox.Show("Enter a name, course and mark (0-100).")
+            Return
+        End If
+        Try
+            Using con As New OleDbConnection(conString)
+                Using cmd As New OleDbCommand("INSERT INTO Students (FullName, Course, [Mark]) VALUES (?, ?, ?)", con)
+                    cmd.Parameters.Add("@name", OleDbType.VarWChar).Value = txtName.Text.Trim()
+                    cmd.Parameters.Add("@course", OleDbType.VarWChar).Value = txtCourse.Text.Trim()
+                    cmd.Parameters.Add("@mark", OleDbType.Integer).Value = score
+                    con.Open()
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+            LoadStudents()
+            MessageBox.Show("Saved successfully.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        Dim id As Integer, score As Integer
+        If Not ReadID(id) OrElse Not ReadMark(score) OrElse txtCourse.Text.Trim() = "" Then
+            MessageBox.Show("Enter a valid ID, course and mark.")
+            Return
+        End If
+        Try
+            Dim changed As Integer
+            Using con As New OleDbConnection(conString)
+                Using cmd As New OleDbCommand("UPDATE Students SET Course = ?, [Mark] = ? WHERE StudentID = ?", con)
+                    cmd.Parameters.Add("@course", OleDbType.VarWChar).Value = txtCourse.Text.Trim()
+                    cmd.Parameters.Add("@mark", OleDbType.Integer).Value = score
+                    cmd.Parameters.Add("@id", OleDbType.Integer).Value = id
+                    con.Open()
+                    changed = cmd.ExecuteNonQuery()
+                End Using
+            End Using
+            LoadStudents()
+            MessageBox.Show(changed.ToString() & " record(s) updated.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim id As Integer
+        If Not ReadID(id) Then
+            MessageBox.Show("Enter a valid student ID.")
+            Return
+        End If
+        If MessageBox.Show("Delete this student?", "Confirm", MessageBoxButtons.YesNo) <> DialogResult.Yes Then Return
+        Try
+            Dim changed As Integer
+            Using con As New OleDbConnection(conString)
+                Using cmd As New OleDbCommand("DELETE FROM Students WHERE StudentID = ?", con)
+                    cmd.Parameters.Add("@id", OleDbType.Integer).Value = id
+                    con.Open()
+                    changed = cmd.ExecuteNonQuery()
+                End Using
+            End Using
+            LoadStudents()
+            MessageBox.Show(changed.ToString() & " record(s) deleted.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+End Class`;
+const starter=`Imports System.Data.OleDb
+
+Public Class Form1
+    Private ReadOnly conString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\CollegeDB\\StudentDB.mdb;"
+
+    ' TODO 1: Create LoadStudents() using OleDbDataAdapter and DataTable.
+    ' TODO 2: In btnSave_Click, INSERT FullName, Course and Mark using ? parameters.
+    ' TODO 3: In btnUpdate_Click, UPDATE by StudentID with a WHERE clause.
+    ' TODO 4: In btnDelete_Click, DELETE by StudentID with confirmation.
+    ' TODO 5: Check input values, use Using blocks, and refresh DataGridView1.
+    ' Form controls: DataGridView1, txtID, txtName, txtCourse, txtMark,
+    ' btnLoad, btnSave, btnUpdate, btnDelete.
+End Class`;
+function toggleSolution(){let e=document.getElementById('solutionBox');e.classList.toggle('hidden');document.getElementById('solutionCode').textContent=solution}function downloadCode(full){let blob=new Blob([full?solution:starter],{type:'text/plain;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=full?'Form1_Completed.vb':'Form1_Starter.vb';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+const qs=[['Which file format does Jet 4.0 use here?',['.accdb','.mdb','.xlsx'],1],['What does SELECT do?',['Reads records','Deletes records','Changes a mark'],0],['Which method runs INSERT?',['MoveNext','ExecuteNonQuery','DataBindings.Clear'],1],['Why use WHERE in UPDATE?',['To choose the row','To create the table','To open Access'],0],['What does DataGridView show?',['Rows and columns','Only one character','A connection string'],0],['What does BindingSource.MoveNext do?',['Save data','Move to next current record','Delete a record'],1],['How does Jet match ? parameters?',['Alphabetically','By their order','By textbox color'],1],['What platform should a Jet 4.0 app target?',['x86','x64 only','AnyCPU 64-bit'],0]];let quiz=document.getElementById('quiz');quiz.innerHTML=qs.map((q,i)=>`<div class="quizitem"><b>${i+1}. ${q[0]}</b>${q[1].map((a,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${esc(a)}</label>`).join('')}</div>`).join('')+'<button class="btn green" onclick="gradeQuiz()">Mark my quiz</button><button class="btn alt" onclick="resetQuiz()">Try again</button><div id="quizFb" class="feedback" aria-live="polite"></div>';function gradeQuiz(){let score=0,missing=0;qs.forEach((q,i)=>{let a=document.querySelector(`input[name=q${i}]:checked`);if(!a)missing++;else if(Number(a.value)===q[2])score++});if(missing){feedback('quizFb',false,`Answer all questions first (${missing} left).`);return}feedback('quizFb',score>=6,`Your score: ${score}/${qs.length}. ${score===8?'Excellent!':score>=6?'Good work! Review any mistakes.':'Revise the lessons and try again.'}`)}function resetQuiz(){document.querySelectorAll('#quiz input').forEach(x=>x.checked=false);document.getElementById('quizFb').textContent=''}function saveReflection(){let s=document.getElementById('reflection').value;try{localStorage.setItem('ncv_db_reflection',s);feedback('reflectionFb',true,'Reflection saved in this browser.')}catch(e){feedback('reflectionFb',false,'Browser storage is unavailable. Copy your reflection instead.')}}try{document.getElementById('reflection').value=localStorage.getItem('ncv_db_reflection')||''}catch(e){}
+</script></body></html>
