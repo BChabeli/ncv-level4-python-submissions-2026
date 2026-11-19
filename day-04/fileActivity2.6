@@ -1,0 +1,44 @@
+# Activity 1: Enter five names and save them in names.txt
+
+print("ENTER FIVE NAMES")
+
+with open("names.txt", "w") as file:
+    for i in range(5):
+        name = input("Enter name: ")
+        file.write(name + "\n")
+
+
+# Activity 2: Read names and print them in uppercase
+
+print("\nFIVE NAMES IN UPPERCASE")
+
+with open("names.txt", "r") as file:
+    for line in file:
+        print(line.strip().upper())
+
+
+# Activity 3: Add a sixth name and count the lines
+
+sixth_name = input("\nEnter the sixth name: ")
+
+with open("names.txt", "a") as file:
+    file.write(sixth_name + "\n")
+
+# Count the number of lines
+
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+print("\nTotal number of names:", len(lines))
+
+
+# Activity 4: Read a file that does not exist without crashing
+
+print("\nCHECKING FILE")
+
+try:
+    with open("missing.txt", "r") as file:
+        print(file.read())
+
+except FileNotFoundError:
+    print("File not found. Check the file name and folder.")
