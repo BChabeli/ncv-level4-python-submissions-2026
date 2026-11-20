@@ -1,0 +1,6 @@
+Line 22: Mark must be between 0 and 100 | 5022,Sello Ramokgopa,104;55;62
+Line 47: Mark is not a whole number | 5047,Rethabile Mabaso,65;abs;78
+Line 80: Duplicate student number | 5004,Dineo Mahlangu,60;78;86
+Line 116: Student name is missing | 5116,,49;94;41
+Line 159: Exactly three marks are required | 5159,Precious Ngwenya,56;79
+Line 206: Student number must contain digits | X5206,Nkosinathi Mokoatle,36;32;30

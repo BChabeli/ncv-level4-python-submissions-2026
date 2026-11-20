@@ -1,0 +1,17 @@
+STUDENT ATTENDANCE EARLY WARNING
+Accepted: 246 | Rejected: 4
+HIGH: 161
+MEDIUM: 47
+LOW: 38
+
+10 LOWEST ATTENDANCE RECORDS
+C3STU0172 Mpho Maseko: 12.0% (HIGH)
+C3STU0009 Kabelo Sithole: 12.5% (HIGH)
+C3STU0079 Sibusiso Khumalo: 13.6% (HIGH)
+C3STU0110 Sibusiso Mogale: 14.3% (HIGH)
+C3STU0064 Tshepo Sithole: 14.3% (HIGH)
+C3STU0240 Refilwe Mathebula: 15.8% (HIGH)
+C3STU0201 Refilwe Mthembu: 15.8% (HIGH)
+C3STU0116 Ayanda Mphahlele: 16.0% (HIGH)
+C3STU0221 Tshepo Ndlovu: 16.0% (HIGH)
+C3STU0250 Naledi Molefe: 16.7% (HIGH)

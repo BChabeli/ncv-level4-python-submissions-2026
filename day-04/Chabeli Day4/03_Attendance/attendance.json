@@ -1,0 +1,1752 @@
+[
+  {
+    "student_id": "C3STU0001",
+    "name": "Lerato Motaung",
+    "sessions_total": 13,
+    "sessions_attended": 4,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0002",
+    "name": "Lesedi Radebe",
+    "sessions_total": 20,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0003",
+    "name": "Zanele Mogale",
+    "sessions_total": 21,
+    "sessions_attended": 10,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0004",
+    "name": "Refilwe Mogale",
+    "sessions_total": 24,
+    "sessions_attended": 5,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0005",
+    "name": "Sibusiso Khumalo",
+    "sessions_total": 23,
+    "sessions_attended": 14,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0006",
+    "name": "Mandla Masango",
+    "sessions_total": 17,
+    "sessions_attended": 14,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0007",
+    "name": "Karabo Masango",
+    "sessions_total": 18,
+    "sessions_attended": 15,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0008",
+    "name": "Sibusiso Molefe",
+    "sessions_total": 20,
+    "sessions_attended": 12,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0009",
+    "name": "Kabelo Sithole",
+    "sessions_total": 24,
+    "sessions_attended": 3,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0010",
+    "name": "Lerato Mabaso",
+    "sessions_total": 23,
+    "sessions_attended": 8,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0011",
+    "name": "Ayanda Radebe",
+    "sessions_total": 25,
+    "sessions_attended": 21,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0012",
+    "name": "Neo Ndlovu",
+    "sessions_total": 13,
+    "sessions_attended": 13,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0013",
+    "name": "Zanele Sithole",
+    "sessions_total": 13,
+    "sessions_attended": 7,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0014",
+    "name": "Zanele Khumalo",
+    "sessions_total": 10,
+    "sessions_attended": 9,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0015",
+    "name": "Karabo Mabaso",
+    "sessions_total": 25,
+    "sessions_attended": 22,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0016",
+    "name": "Neo Sithole",
+    "sessions_total": 13,
+    "sessions_attended": 6,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0017",
+    "name": "Lerato Mogale",
+    "sessions_total": 17,
+    "sessions_attended": 13,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0018",
+    "name": "Mandla Sithole",
+    "sessions_total": 24,
+    "sessions_attended": 16,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0019",
+    "name": "Sipho Mthembu",
+    "sessions_total": 25,
+    "sessions_attended": 7,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0020",
+    "name": "Kabelo Mogale",
+    "sessions_total": 10,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0021",
+    "name": "Refilwe Mphahlele",
+    "sessions_total": 10,
+    "sessions_attended": 7,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0022",
+    "name": "Karabo Mokoena",
+    "sessions_total": 13,
+    "sessions_attended": 12,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0023",
+    "name": "Karabo Mahlangu",
+    "sessions_total": 20,
+    "sessions_attended": 17,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0024",
+    "name": "Zanele Dlamini",
+    "sessions_total": 19,
+    "sessions_attended": 15,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0025",
+    "name": "Naledi Molefe",
+    "sessions_total": 12,
+    "sessions_attended": 12,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0026",
+    "name": "Tumelo Mogale",
+    "sessions_total": 21,
+    "sessions_attended": 14,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0027",
+    "name": "Lesedi Mathebula",
+    "sessions_total": 12,
+    "sessions_attended": 11,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0028",
+    "name": "Ayanda Mabaso",
+    "sessions_total": 25,
+    "sessions_attended": 19,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0029",
+    "name": "Katlego Ndlovu",
+    "sessions_total": 18,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0030",
+    "name": "Tumelo Sithole",
+    "sessions_total": 11,
+    "sessions_attended": 16,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0031",
+    "name": "Refilwe Ndlovu",
+    "sessions_total": 13,
+    "sessions_attended": 10,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0032",
+    "name": "Lesedi Molefe",
+    "sessions_total": 10,
+    "sessions_attended": 5,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0033",
+    "name": "Tumelo Molefe",
+    "sessions_total": 13,
+    "sessions_attended": 4,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0034",
+    "name": "Thandi Ndlovu",
+    "sessions_total": 13,
+    "sessions_attended": 3,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0035",
+    "name": "Ayanda Ndlovu",
+    "sessions_total": 20,
+    "sessions_attended": 5,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0036",
+    "name": "Thandi Motaung",
+    "sessions_total": 15,
+    "sessions_attended": 5,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0037",
+    "name": "Neo Ndlovu",
+    "sessions_total": 18,
+    "sessions_attended": 9,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0038",
+    "name": "Sipho Mathebula",
+    "sessions_total": 22,
+    "sessions_attended": 13,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0039",
+    "name": "Mandla Dlamini",
+    "sessions_total": 23,
+    "sessions_attended": 9,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0040",
+    "name": "Lerato Mthembu",
+    "sessions_total": 11,
+    "sessions_attended": 5,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0041",
+    "name": "Sibusiso Mathebula",
+    "sessions_total": 19,
+    "sessions_attended": 12,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0042",
+    "name": "Zanele Mokoena",
+    "sessions_total": 11,
+    "sessions_attended": 3,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0043",
+    "name": "Boitumelo Ndlovu",
+    "sessions_total": 11,
+    "sessions_attended": 11,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0044",
+    "name": "Tumelo Mabaso",
+    "sessions_total": 18,
+    "sessions_attended": 15,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0045",
+    "name": "Nomsa Mogale",
+    "sessions_total": 20,
+    "sessions_attended": 6,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0046",
+    "name": "Lesedi Molefe",
+    "sessions_total": 12,
+    "sessions_attended": 4,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0047",
+    "name": "Nomsa Mokoena",
+    "sessions_total": 25,
+    "sessions_attended": 24,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0048",
+    "name": "Katlego Masango",
+    "sessions_total": 16,
+    "sessions_attended": 11,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0049",
+    "name": "Lesedi Mogale",
+    "sessions_total": 22,
+    "sessions_attended": 17,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0050",
+    "name": "Nomsa Mahlangu",
+    "sessions_total": 16,
+    "sessions_attended": 5,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0051",
+    "name": "Katlego Masango",
+    "sessions_total": 13,
+    "sessions_attended": 4,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0052",
+    "name": "Lerato Mahlangu",
+    "sessions_total": 22,
+    "sessions_attended": 9,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0053",
+    "name": "Naledi Mabena",
+    "sessions_total": 23,
+    "sessions_attended": 20,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0054",
+    "name": "Naledi Khumalo",
+    "sessions_total": 11,
+    "sessions_attended": 6,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0055",
+    "name": "Lesedi Radebe",
+    "sessions_total": 19,
+    "sessions_attended": 14,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0056",
+    "name": "Tshepo Radebe",
+    "sessions_total": 22,
+    "sessions_attended": 20,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0057",
+    "name": "Sipho Maseko",
+    "sessions_total": 25,
+    "sessions_attended": 14,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0058",
+    "name": "Zanele Motaung",
+    "sessions_total": 23,
+    "sessions_attended": 15,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0059",
+    "name": "Kabelo Maseko",
+    "sessions_total": 21,
+    "sessions_attended": 10,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0060",
+    "name": "Mandla Mathebula",
+    "sessions_total": 20,
+    "sessions_attended": 18,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0061",
+    "name": "Tumelo Mthembu",
+    "sessions_total": 11,
+    "sessions_attended": 10,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0062",
+    "name": "Boitumelo Mogale",
+    "sessions_total": 23,
+    "sessions_attended": 4,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0063",
+    "name": "Palesa Motaung",
+    "sessions_total": 20,
+    "sessions_attended": 6,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0064",
+    "name": "Tshepo Sithole",
+    "sessions_total": 21,
+    "sessions_attended": 3,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0065",
+    "name": "Sibusiso Nkosi",
+    "sessions_total": 21,
+    "sessions_attended": 5,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0066",
+    "name": "Tumelo Maseko",
+    "sessions_total": 18,
+    "sessions_attended": 14,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0067",
+    "name": "Zanele Mphahlele",
+    "sessions_total": 24,
+    "sessions_attended": 18,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0068",
+    "name": "Naledi Motaung",
+    "sessions_total": 15,
+    "sessions_attended": 13,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0069",
+    "name": "Katlego Khumalo",
+    "sessions_total": 20,
+    "sessions_attended": 12,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0070",
+    "name": "Boitumelo Nkosi",
+    "sessions_total": 24,
+    "sessions_attended": 7,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0071",
+    "name": "Mandla Mabena",
+    "sessions_total": 19,
+    "sessions_attended": 15,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0072",
+    "name": "Nomsa Khumalo",
+    "sessions_total": 16,
+    "sessions_attended": 16,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0073",
+    "name": "Boitumelo Sithole",
+    "sessions_total": 19,
+    "sessions_attended": 7,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0074",
+    "name": "Lesedi Mphahlele",
+    "sessions_total": 22,
+    "sessions_attended": 9,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0075",
+    "name": "Zanele Dlamini",
+    "sessions_total": 12,
+    "sessions_attended": 4,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0076",
+    "name": "Zanele Mphahlele",
+    "sessions_total": 14,
+    "sessions_attended": 12,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0077",
+    "name": "Lerato Dlamini",
+    "sessions_total": 22,
+    "sessions_attended": 16,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0078",
+    "name": "Mpho Radebe",
+    "sessions_total": 25,
+    "sessions_attended": 7,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0079",
+    "name": "Sibusiso Khumalo",
+    "sessions_total": 22,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0080",
+    "name": "Refilwe Ndlovu",
+    "sessions_total": 11,
+    "sessions_attended": 9,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0081",
+    "name": "Lesedi Motaung",
+    "sessions_total": 16,
+    "sessions_attended": 15,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0082",
+    "name": "Tumelo Molefe",
+    "sessions_total": 13,
+    "sessions_attended": 10,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0083",
+    "name": "Lesedi Khumalo",
+    "sessions_total": 21,
+    "sessions_attended": 8,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0084",
+    "name": "Palesa Maseko",
+    "sessions_total": 10,
+    "sessions_attended": 9,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0085",
+    "name": "Thandi Sithole",
+    "sessions_total": 18,
+    "sessions_attended": 13,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0086",
+    "name": "Mpho Mthembu",
+    "sessions_total": 17,
+    "sessions_attended": 4,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0087",
+    "name": "Sibusiso Mphahlele",
+    "sessions_total": 10,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0088",
+    "name": "Neo Masango",
+    "sessions_total": 16,
+    "sessions_attended": 5,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0089",
+    "name": "Mpho Mabena",
+    "sessions_total": 23,
+    "sessions_attended": 17,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0089",
+    "name": "Lerato Mahlangu",
+    "sessions_total": 11,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0091",
+    "name": "Nomsa Mokoena",
+    "sessions_total": 12,
+    "sessions_attended": 5,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0092",
+    "name": "Mpho Khumalo",
+    "sessions_total": 19,
+    "sessions_attended": 9,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0093",
+    "name": "Mpho Masango",
+    "sessions_total": 23,
+    "sessions_attended": 11,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0094",
+    "name": "Tumelo Radebe",
+    "sessions_total": 23,
+    "sessions_attended": 13,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0095",
+    "name": "Zanele Radebe",
+    "sessions_total": 18,
+    "sessions_attended": 16,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0096",
+    "name": "Tshepo Mthembu",
+    "sessions_total": 13,
+    "sessions_attended": 3,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0097",
+    "name": "Palesa Masango",
+    "sessions_total": 18,
+    "sessions_attended": 7,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0098",
+    "name": "Sipho Dlamini",
+    "sessions_total": 13,
+    "sessions_attended": 12,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0099",
+    "name": "Ayanda Mabaso",
+    "sessions_total": 23,
+    "sessions_attended": 8,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0100",
+    "name": "Katlego Mabaso",
+    "sessions_total": 12,
+    "sessions_attended": 4,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0101",
+    "name": "Thandi Mabaso",
+    "sessions_total": 17,
+    "sessions_attended": 5,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0102",
+    "name": "Sipho Motaung",
+    "sessions_total": 25,
+    "sessions_attended": 25,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0103",
+    "name": "Karabo Masango",
+    "sessions_total": 23,
+    "sessions_attended": 22,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0104",
+    "name": "Mpho Mahlangu",
+    "sessions_total": 18,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0105",
+    "name": "Palesa Motaung",
+    "sessions_total": 13,
+    "sessions_attended": 10,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0106",
+    "name": "Palesa Maseko",
+    "sessions_total": 12,
+    "sessions_attended": 12,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0107",
+    "name": "Thandi Masango",
+    "sessions_total": 22,
+    "sessions_attended": 4,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0108",
+    "name": "Kabelo Mogale",
+    "sessions_total": 18,
+    "sessions_attended": 15,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0109",
+    "name": "Nomsa Motaung",
+    "sessions_total": 24,
+    "sessions_attended": 17,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0110",
+    "name": "Sibusiso Mogale",
+    "sessions_total": 21,
+    "sessions_attended": 3,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0111",
+    "name": "Neo Mabaso",
+    "sessions_total": 19,
+    "sessions_attended": 13,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0112",
+    "name": "Refilwe Mokoena",
+    "sessions_total": 22,
+    "sessions_attended": 15,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0113",
+    "name": "Thandi Motaung",
+    "sessions_total": 14,
+    "sessions_attended": 7,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0114",
+    "name": "Palesa Mabaso",
+    "sessions_total": 11,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0115",
+    "name": "Neo Ndlovu",
+    "sessions_total": 12,
+    "sessions_attended": 7,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0116",
+    "name": "Ayanda Mphahlele",
+    "sessions_total": 25,
+    "sessions_attended": 4,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0117",
+    "name": "Tshepo Mathebula",
+    "sessions_total": 11,
+    "sessions_attended": 10,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0118",
+    "name": "Tshepo Mokoena",
+    "sessions_total": 25,
+    "sessions_attended": 23,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0119",
+    "name": "Zanele Mabena",
+    "sessions_total": 23,
+    "sessions_attended": 19,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0120",
+    "name": "Tshepo Molefe",
+    "sessions_total": 21,
+    "sessions_attended": 4,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0121",
+    "name": "Ayanda Radebe",
+    "sessions_total": 19,
+    "sessions_attended": 18,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0122",
+    "name": "Sipho Mabaso",
+    "sessions_total": 20,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0123",
+    "name": "Palesa Dlamini",
+    "sessions_total": 15,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0124",
+    "name": "Zanele Sithole",
+    "sessions_total": 10,
+    "sessions_attended": 4,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0125",
+    "name": "Lerato Mabena",
+    "sessions_total": 13,
+    "sessions_attended": 3,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0126",
+    "name": "Neo Mokoena",
+    "sessions_total": 24,
+    "sessions_attended": 12,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0127",
+    "name": "Kabelo Ndlovu",
+    "sessions_total": 23,
+    "sessions_attended": 16,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0128",
+    "name": "Sibusiso Mabena",
+    "sessions_total": 13,
+    "sessions_attended": 5,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0129",
+    "name": "Palesa Mphahlele",
+    "sessions_total": 11,
+    "sessions_attended": 8,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0130",
+    "name": "Lesedi Molefe",
+    "sessions_total": 14,
+    "sessions_attended": 10,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0131",
+    "name": "Lesedi Khumalo",
+    "sessions_total": 21,
+    "sessions_attended": 19,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0132",
+    "name": "Zanele Mthembu",
+    "sessions_total": 12,
+    "sessions_attended": 8,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0133",
+    "name": "Kabelo Mthembu",
+    "sessions_total": 11,
+    "sessions_attended": 3,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0134",
+    "name": "Sibusiso Sithole",
+    "sessions_total": 18,
+    "sessions_attended": 18,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0135",
+    "name": "Palesa Motaung",
+    "sessions_total": 15,
+    "sessions_attended": 7,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0136",
+    "name": "Sipho Radebe",
+    "sessions_total": 18,
+    "sessions_attended": 17,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0137",
+    "name": "Ayanda Mabena",
+    "sessions_total": 15,
+    "sessions_attended": 13,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0138",
+    "name": "Sipho Mokoena",
+    "sessions_total": 17,
+    "sessions_attended": 8,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0139",
+    "name": "Lerato Molefe",
+    "sessions_total": 22,
+    "sessions_attended": 22,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0140",
+    "name": "Karabo Dlamini",
+    "sessions_total": 16,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0141",
+    "name": "Boitumelo Ndlovu",
+    "sessions_total": 21,
+    "sessions_attended": 7,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0142",
+    "name": "Neo Nkosi",
+    "sessions_total": 19,
+    "sessions_attended": 12,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0143",
+    "name": "Boitumelo Molefe",
+    "sessions_total": 12,
+    "sessions_attended": 11,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0144",
+    "name": "Tumelo Sithole",
+    "sessions_total": 25,
+    "sessions_attended": 12,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0145",
+    "name": "Sipho Maseko",
+    "sessions_total": 18,
+    "sessions_attended": 18,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0146",
+    "name": "Sibusiso Molefe",
+    "sessions_total": 12,
+    "sessions_attended": 11,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0147",
+    "name": "Tumelo Masango",
+    "sessions_total": 18,
+    "sessions_attended": 17,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0148",
+    "name": "Naledi Ndlovu",
+    "sessions_total": 16,
+    "sessions_attended": 14,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0149",
+    "name": "Mandla Maseko",
+    "sessions_total": 19,
+    "sessions_attended": 7,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0150",
+    "name": "Ayanda Mphahlele",
+    "sessions_total": 19,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0151",
+    "name": "Kabelo Mokoena",
+    "sessions_total": 23,
+    "sessions_attended": 6,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0152",
+    "name": "Neo Mogale",
+    "sessions_total": 11,
+    "sessions_attended": 10,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0153",
+    "name": "Kabelo Mogale",
+    "sessions_total": 20,
+    "sessions_attended": 5,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0154",
+    "name": "Boitumelo Mabena",
+    "sessions_total": 19,
+    "sessions_attended": 14,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0155",
+    "name": "Kabelo Sithole",
+    "sessions_total": 16,
+    "sessions_attended": 5,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0156",
+    "name": "Lesedi Dlamini",
+    "sessions_total": 21,
+    "sessions_attended": 19,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0157",
+    "name": "Lerato Mabena",
+    "sessions_total": 16,
+    "sessions_attended": 4,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0158",
+    "name": "Katlego Molefe",
+    "sessions_total": 13,
+    "sessions_attended": 12,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0159",
+    "name": "Tumelo Mphahlele",
+    "sessions_total": 10,
+    "sessions_attended": 10,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0160",
+    "name": "",
+    "sessions_total": 19,
+    "sessions_attended": 14,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0161",
+    "name": "Tumelo Sithole",
+    "sessions_total": 10,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0162",
+    "name": "Boitumelo Masango",
+    "sessions_total": 25,
+    "sessions_attended": 25,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0163",
+    "name": "Refilwe Mphahlele",
+    "sessions_total": 13,
+    "sessions_attended": 13,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0164",
+    "name": "Palesa Maseko",
+    "sessions_total": 12,
+    "sessions_attended": 7,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0165",
+    "name": "Tumelo Motaung",
+    "sessions_total": 14,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0166",
+    "name": "Nomsa Motaung",
+    "sessions_total": 23,
+    "sessions_attended": 8,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0167",
+    "name": "Lerato Mphahlele",
+    "sessions_total": 20,
+    "sessions_attended": 19,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0168",
+    "name": "Lesedi Mokoena",
+    "sessions_total": 13,
+    "sessions_attended": 6,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0169",
+    "name": "Mpho Dlamini",
+    "sessions_total": 14,
+    "sessions_attended": 11,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0170",
+    "name": "Thandi Dlamini",
+    "sessions_total": 13,
+    "sessions_attended": 7,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0171",
+    "name": "Tshepo Sithole",
+    "sessions_total": 21,
+    "sessions_attended": 19,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0172",
+    "name": "Mpho Maseko",
+    "sessions_total": 25,
+    "sessions_attended": 3,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0173",
+    "name": "Refilwe Motaung",
+    "sessions_total": 12,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0174",
+    "name": "Tshepo Motaung",
+    "sessions_total": 15,
+    "sessions_attended": 14,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0175",
+    "name": "Lerato Mphahlele",
+    "sessions_total": 24,
+    "sessions_attended": 12,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0176",
+    "name": "Zanele Motaung",
+    "sessions_total": 12,
+    "sessions_attended": 6,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0177",
+    "name": "Zanele Sithole",
+    "sessions_total": 17,
+    "sessions_attended": 15,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0178",
+    "name": "Mandla Mathebula",
+    "sessions_total": 14,
+    "sessions_attended": 6,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0179",
+    "name": "Tshepo Masango",
+    "sessions_total": 17,
+    "sessions_attended": 8,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0180",
+    "name": "Karabo Nkosi",
+    "sessions_total": 14,
+    "sessions_attended": 12,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0181",
+    "name": "Lerato Molefe",
+    "sessions_total": 16,
+    "sessions_attended": 14,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0182",
+    "name": "Kabelo Mthembu",
+    "sessions_total": 24,
+    "sessions_attended": 14,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0183",
+    "name": "Neo Mthembu",
+    "sessions_total": 22,
+    "sessions_attended": 12,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0184",
+    "name": "Sipho Mthembu",
+    "sessions_total": 12,
+    "sessions_attended": 10,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0185",
+    "name": "Lerato Khumalo",
+    "sessions_total": 18,
+    "sessions_attended": 15,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0186",
+    "name": "Nomsa Maseko",
+    "sessions_total": 21,
+    "sessions_attended": 13,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0187",
+    "name": "Tshepo Khumalo",
+    "sessions_total": 17,
+    "sessions_attended": 10,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0188",
+    "name": "Sipho Khumalo",
+    "sessions_total": 21,
+    "sessions_attended": 12,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0189",
+    "name": "Lesedi Mabaso",
+    "sessions_total": 22,
+    "sessions_attended": 22,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0190",
+    "name": "Naledi Molefe",
+    "sessions_total": 25,
+    "sessions_attended": 8,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0191",
+    "name": "Lesedi Dlamini",
+    "sessions_total": 10,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0192",
+    "name": "Mpho Dlamini",
+    "sessions_total": 20,
+    "sessions_attended": 6,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0193",
+    "name": "Sipho Motaung",
+    "sessions_total": 12,
+    "sessions_attended": 5,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0194",
+    "name": "Sipho Motaung",
+    "sessions_total": 11,
+    "sessions_attended": 8,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0195",
+    "name": "Palesa Khumalo",
+    "sessions_total": 24,
+    "sessions_attended": 24,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0196",
+    "name": "Tumelo Mabena",
+    "sessions_total": 17,
+    "sessions_attended": 4,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0197",
+    "name": "Mandla Radebe",
+    "sessions_total": 21,
+    "sessions_attended": 13,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0198",
+    "name": "Lesedi Radebe",
+    "sessions_total": 14,
+    "sessions_attended": 5,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0199",
+    "name": "Tumelo Mabaso",
+    "sessions_total": 24,
+    "sessions_attended": 7,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0200",
+    "name": "Kabelo Mogale",
+    "sessions_total": 19,
+    "sessions_attended": 5,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0201",
+    "name": "Refilwe Mthembu",
+    "sessions_total": 19,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0202",
+    "name": "Mandla Mabaso",
+    "sessions_total": 15,
+    "sessions_attended": 5,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0203",
+    "name": "Zanele Molefe",
+    "sessions_total": 18,
+    "sessions_attended": 7,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0204",
+    "name": "Sipho Mokoena",
+    "sessions_total": 17,
+    "sessions_attended": 10,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0205",
+    "name": "Lesedi Mthembu",
+    "sessions_total": 17,
+    "sessions_attended": 17,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0206",
+    "name": "Tumelo Sithole",
+    "sessions_total": 19,
+    "sessions_attended": 15,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0207",
+    "name": "Sibusiso Masango",
+    "sessions_total": 23,
+    "sessions_attended": 4,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0208",
+    "name": "Naledi Molefe",
+    "sessions_total": 22,
+    "sessions_attended": 13,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0209",
+    "name": "Zanele Mabena",
+    "sessions_total": 17,
+    "sessions_attended": 10,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0210",
+    "name": "Sibusiso Dlamini",
+    "sessions_total": 18,
+    "sessions_attended": 6,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0211",
+    "name": "Sibusiso Mphahlele",
+    "sessions_total": 12,
+    "sessions_attended": 7,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0212",
+    "name": "Thandi Khumalo",
+    "sessions_total": 20,
+    "sessions_attended": 12,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0213",
+    "name": "Lerato Radebe",
+    "sessions_total": 18,
+    "sessions_attended": 11,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0214",
+    "name": "Mpho Motaung",
+    "sessions_total": 23,
+    "sessions_attended": 23,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0215",
+    "name": "Kabelo Mphahlele",
+    "sessions_total": 12,
+    "sessions_attended": 9,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0216",
+    "name": "Sipho Mphahlele",
+    "sessions_total": 15,
+    "sessions_attended": 10,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0217",
+    "name": "Tumelo Sithole",
+    "sessions_total": 14,
+    "sessions_attended": 13,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0218",
+    "name": "Mpho Mabaso",
+    "sessions_total": 21,
+    "sessions_attended": 4,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0219",
+    "name": "Neo Nkosi",
+    "sessions_total": 15,
+    "sessions_attended": 6,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0220",
+    "name": "Tshepo Mahlangu",
+    "sessions_total": 21,
+    "sessions_attended": 13,
+    "late_submissions": -1
+  },
+  {
+    "student_id": "C3STU0221",
+    "name": "Tshepo Ndlovu",
+    "sessions_total": 25,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0222",
+    "name": "Neo Khumalo",
+    "sessions_total": 21,
+    "sessions_attended": 20,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0223",
+    "name": "Naledi Masango",
+    "sessions_total": 11,
+    "sessions_attended": 9,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0224",
+    "name": "Refilwe Radebe",
+    "sessions_total": 25,
+    "sessions_attended": 19,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0225",
+    "name": "Zanele Dlamini",
+    "sessions_total": 24,
+    "sessions_attended": 13,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0226",
+    "name": "Neo Mathebula",
+    "sessions_total": 20,
+    "sessions_attended": 12,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0227",
+    "name": "Lesedi Mthembu",
+    "sessions_total": 16,
+    "sessions_attended": 3,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0228",
+    "name": "Nomsa Mathebula",
+    "sessions_total": 11,
+    "sessions_attended": 5,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0229",
+    "name": "Nomsa Mphahlele",
+    "sessions_total": 11,
+    "sessions_attended": 7,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0230",
+    "name": "Naledi Mthembu",
+    "sessions_total": 17,
+    "sessions_attended": 11,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0231",
+    "name": "Karabo Masango",
+    "sessions_total": 13,
+    "sessions_attended": 7,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0232",
+    "name": "Karabo Mathebula",
+    "sessions_total": 18,
+    "sessions_attended": 4,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0233",
+    "name": "Mpho Dlamini",
+    "sessions_total": 22,
+    "sessions_attended": 11,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0234",
+    "name": "Tshepo Masango",
+    "sessions_total": 24,
+    "sessions_attended": 15,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0235",
+    "name": "Tumelo Radebe",
+    "sessions_total": 12,
+    "sessions_attended": 3,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0236",
+    "name": "Naledi Ndlovu",
+    "sessions_total": 14,
+    "sessions_attended": 14,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0237",
+    "name": "Neo Motaung",
+    "sessions_total": 19,
+    "sessions_attended": 10,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0238",
+    "name": "Tumelo Mphahlele",
+    "sessions_total": 14,
+    "sessions_attended": 7,
+    "late_submissions": 5
+  },
+  {
+    "student_id": "C3STU0239",
+    "name": "Thandi Mogale",
+    "sessions_total": 22,
+    "sessions_attended": 5,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0240",
+    "name": "Refilwe Mathebula",
+    "sessions_total": 19,
+    "sessions_attended": 3,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0241",
+    "name": "Boitumelo Sithole",
+    "sessions_total": 24,
+    "sessions_attended": 24,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0242",
+    "name": "Boitumelo Mokoena",
+    "sessions_total": 12,
+    "sessions_attended": 4,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0243",
+    "name": "Katlego Mokoena",
+    "sessions_total": 24,
+    "sessions_attended": 18,
+    "late_submissions": 2
+  },
+  {
+    "student_id": "C3STU0244",
+    "name": "Karabo Mokoena",
+    "sessions_total": 24,
+    "sessions_attended": 6,
+    "late_submissions": 4
+  },
+  {
+    "student_id": "C3STU0245",
+    "name": "Naledi Mabaso",
+    "sessions_total": 14,
+    "sessions_attended": 13,
+    "late_submissions": 3
+  },
+  {
+    "student_id": "C3STU0246",
+    "name": "Sipho Mthembu",
+    "sessions_total": 14,
+    "sessions_attended": 11,
+    "late_submissions": 1
+  },
+  {
+    "student_id": "C3STU0247",
+    "name": "Tshepo Mahlangu",
+    "sessions_total": 24,
+    "sessions_attended": 21,
+    "late_submissions": 0
+  },
+  {
+    "student_id": "C3STU0248",
+    "name": "Lesedi Mathebula",
+    "sessions_total": 25,
+    "sessions_attended": 12,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0249",
+    "name": "Palesa Motaung",
+    "sessions_total": 14,
+    "sessions_attended": 14,
+    "late_submissions": 6
+  },
+  {
+    "student_id": "C3STU0250",
+    "name": "Naledi Molefe",
+    "sessions_total": 18,
+    "sessions_attended": 3,
+    "late_submissions": 3
+  }
+]
